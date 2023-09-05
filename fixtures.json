@@ -1,0 +1,15 @@
+[
+{
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+        "name": "мука",
+        "description": "для выпечки",
+        "image": "",
+        "category": 1,
+        "price": "100.00",
+        "created_at": "2023-09-03T20:40:03.417Z",
+        "updated_at": "2023-09-03T20:40:03.417Z"
+    }
+}
+]
