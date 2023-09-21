@@ -11,4 +11,4 @@ def product_detail(request, id):
 def product_list(request):
     products = Product.objects.all()
     context = {'products': products}
-    return render(request, 'index.html', context=context)
+    return render(request, 'shop/index.html', context=context)
