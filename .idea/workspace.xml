@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shop/templates/shop/category_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_image/images.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templatetags/my_tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templatetags/my_tag.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
     </list>
@@ -59,7 +62,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/veronika/PycharmProjects/pythonProject/home_work_ORM/static&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/veronika/PycharmProjects/pythonProject/home_work_ORM/shop/templates/shop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -74,11 +77,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop/templates/shop" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/shop" />
       <recent name="$PROJECT_DIR$/media/product_image" />
+      <recent name="$PROJECT_DIR$/product_image" />
+      <recent name="$PROJECT_DIR$/shop" />
       <recent name="$PROJECT_DIR$/shop/templates/shop" />
     </key>
   </component>
@@ -99,7 +104,9 @@
       <workItem from="1694893084799" duration="2395000" />
       <workItem from="1695146770793" duration="1260000" />
       <workItem from="1695279659904" duration="5766000" />
-      <workItem from="1695317309729" duration="4484000" />
+      <workItem from="1695317309729" duration="5197000" />
+      <workItem from="1695703575783" duration="8488000" />
+      <workItem from="1695751766155" duration="1814000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
@@ -109,7 +116,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695279922582</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create project2">
+      <option name="closed" value="true" />
+      <created>1695322742694</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695322742695</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create project2">
+      <option name="closed" value="true" />
+      <created>1695322783493</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695322783493</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="create project2" />
+    <option name="LAST_COMMIT_MESSAGE" value="create project2" />
   </component>
 </project>

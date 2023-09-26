@@ -1,7 +1,8 @@
+{% load my_tag %}
 <!DOCTYPE html>
 <html>
 <head>
- <title>Product Card</title>
+ <title>{{product.name}}</title>
  <style>
   /* Общие стили */
   * {
@@ -83,7 +84,6 @@
 
   .original-price {
    color: #999;
-   text-decoration: line-through;
    margin-right: 10px;
   }
 
@@ -153,15 +153,14 @@
 <body>
  <div class="product-card">
   <div class="product-image">
-   <img src="https://via.placeholder.com/400x300" alt="Product Image">
+   <img src="{% mediapath product.image %}" alt="Product Image">
    <div class="product-label new">New</div>
   </div>
   <div class="product-info">
-   <h2 class="product-name">Product Name</h2>
-   <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo euismod, tincidunt nisi vel, feugiat odio. Praesent ullamcorper ligula in mi bibendum, ac lobortis turpis suscipit. Nullam euismod magna et nisi bibendum, ut pulvinar purus posuere. Donec auctor nunc et mi porta, eget gravida nisl hendrerit.</p>
+   <h2 class="product-name">{{product.name}}</h2>
+   <p class="product-description">{{product.description}}</p>
    <div class="product-price">
-    <span class="original-price">$100.00</span>
-    <span class="discounted-price">$80.00</span>
+    <span class="original-price"> AED {{product.price}}</span>
    </div>
    <div class="product-rating">
     <span class="star">&#9733;</span>
@@ -171,22 +170,7 @@
     <span class="star">&#9734;</span>
     <span class="rating-count">(10)</span>
    </div>
-   <div class="product-colors">
-    <label for="colors">Color:</label>
-    <select name="colors" id="colors">
-     <option value="red">Red</option>
-     <option value="blue">Blue</option>
-     <option value="green">Green</option>
-    </select>
-   </div>
-   <div class="product-sizes">
-    <label for="sizes">Size:</label>
-    <select name="sizes" id="sizes">
-     <option value="small">Small</option>
-     <option value="medium">Medium</option>
-     <option value="large">Large</option>
-    </select>
-   </div>
+
    <button class="add-to-cart">Add to Cart</button>
   </div>
  </div>
