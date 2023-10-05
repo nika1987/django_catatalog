@@ -157,10 +157,13 @@
    <div class="product-label new">New</div>
   </div>
   <div class="product-info">
-   <h2 class="product-name">{{product.name}}</h2>
+   <h2 class="product-name">{{product.name}} ({{product.slug}})</h2>
    <p class="product-description">{{product.description}}</p>
    <div class="product-price">
     <span class="original-price"> AED {{product.price}}</span>
+   </div>
+   <div class="card-footer">
+         Просмотры: {{product.views_count}}
    </div>
    <div class="product-rating">
     <span class="star">&#9733;</span>
