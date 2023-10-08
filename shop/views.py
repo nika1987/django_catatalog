@@ -15,22 +15,12 @@ class ProductListView(ListView):
     template_name = 'shop/index.html'
     context_object_name = 'products'
 
-    def get_queryset(self, *args, **kwargs):
-        queryset = super().get_queryset(*args, **kwargs)
-        queryset = queryset.filter(is_published=True)
-        return queryset
-
-
 class ProductDetailView(DetailView):
     model = Product
     template_name = 'shop/test.html'
     context_object_name = 'product'
 
-    def get_object(self, queryset=None):
-        self.object = super().get_object()
-        self.object.views_count += 1
-        self.object.save()
-        return self.object
+
 
 
 class CategoryListView(ListView):
@@ -50,24 +40,17 @@ class ProductCreateView(CreateView):
     fields = ('name', 'description')
     success_url = reverse_lazy('shop:test')
 
-    def form_validate(self, form):
-        new_product = form.save()
-        new_product.slug = slugify(new_product.name)
-        new_product.save()
-        return super().form_valid(form)
 
 
 class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Product
     fields = ('name', 'description',)
-    #success_url = reverse_lazy('shop:test')
+    success_url = reverse_lazy('shop:test')
 
-    def form_validate(self, form):
-        if form.is_valid():
-            new_product = form.save()
-            new_product.slug = slugify(new_product.name)
-            new_product.save()
-        return super().form_valid(form)
 
-    def get_success_url(self):
-        return reverse('products:view', args=[self.kwargs.get('pk')])
+
+class BlogPostCreateView(CreateView):
+    model = BlogPost
+    fields = ('name', 'description')
+    success_url = reverse_lazy('shop:index')
+

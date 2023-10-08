@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shop/migrations/0003_blogpost.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/migrations/0004_product_is_published_product_slug_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/blogpost_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
     </list>
@@ -110,6 +108,7 @@
       <workItem from="1696273953440" duration="22000" />
       <workItem from="1696362297026" duration="1826000" />
       <workItem from="1696534165788" duration="9008000" />
+      <workItem from="1696793827365" duration="3297000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
