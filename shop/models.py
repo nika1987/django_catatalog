@@ -37,17 +37,3 @@ class Product(models.Model):
         verbose_name_plural = 'Продукты'
 
 
-class BlogPost(models.Model):
-    name = models.CharField(max_length=100)
-    slug = models.CharField(max_length=100, unique=True)
-    description = models.TextField(verbose_name='Описание')
-    image = models.ImageField(upload_to='product_image/', verbose_name='превью', **NULLABLE)
-    created_at = models.DateTimeField(auto_now_add=True, null=True, verbose_name='Дата создания')
-    publication_sign = models.DateTimeField(auto_now=True, verbose_name='Дата обновления')
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        verbose_name = 'Блок'
-        verbose_name_plural = 'Блоки'

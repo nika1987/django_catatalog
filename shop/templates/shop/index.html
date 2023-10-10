@@ -3,10 +3,8 @@
 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
         <h1 class="display-4 fw-normal text-body-emphasis">Главная</h1>
         <p class="fs-5 text-body-secondary">Вы находитесь на сайте предназначенном для продажи товаров.</p>
-    <div class="col-22 mb-5">
-        <a class="btn btn-outline-primary" href="{% url 'shop:blogpost_form' %}">Создать запись в блог</a>
-
-        <div class="container">
+    <div class="container">
+        <a href="blog/create/" class="btn btn-primary">Создать запись</a>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
                 {% for product in products %}
                     <div class="col">

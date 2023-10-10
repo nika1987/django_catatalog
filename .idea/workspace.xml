@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shop/templates/shop/blogpost_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/migrations/0005_blogpost_is_published_blogpost_views_count_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/migrations/0006_delete_blogpost.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/blogpost_form.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/templates/shop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
     </list>
@@ -19,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -78,6 +94,7 @@
       <recent name="$PROJECT_DIR$/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/media/product_image" />
       <recent name="$PROJECT_DIR$/product_image" />
       <recent name="$PROJECT_DIR$/shop" />
@@ -108,7 +125,9 @@
       <workItem from="1696273953440" duration="22000" />
       <workItem from="1696362297026" duration="1826000" />
       <workItem from="1696534165788" duration="9008000" />
-      <workItem from="1696793827365" duration="3297000" />
+      <workItem from="1696793827365" duration="4659000" />
+      <workItem from="1696882741811" duration="7533000" />
+      <workItem from="1696966547630" duration="5879000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
@@ -142,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695754174625</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update blog">
+      <option name="closed" value="true" />
+      <created>1696797252840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696797252841</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +179,7 @@
     <MESSAGE value="create project" />
     <MESSAGE value="create project2" />
     <MESSAGE value="finish project" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish project" />
+    <MESSAGE value="update blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="update blog" />
   </component>
 </project>
