@@ -11,13 +11,13 @@ class BlogListView(ListView):
 
 class BlogCreateView(CreateView):
     model = BlogPost
-    fields = ('title', 'content', 'is_published')
+    fields = ('name', 'description', 'is_published')
     success_url = reverse_lazy('blog:blog_list')
 
     def form_valid(self, form):
         if form.is_valid():
             new_post = form.save()
-            new_post.slug = slugify(new_post.title)
+            new_post.slug = slugify(new_post.name)
             new_post.save()
         else:
             print('ошибка')
@@ -36,7 +36,7 @@ class BlogDetailView(DetailView):
 
 class BlogUpdateView(UpdateView):
     model = BlogPost
-    fields = ('title', 'content', 'is_published')
+    fields = ('name', 'description', 'is_published')
     success_url = reverse_lazy('blog:blog_list')
 
     def form_valid(self, form):
