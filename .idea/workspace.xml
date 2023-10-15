@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogpost_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogpost_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/.blogpost_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogpost_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/.blogpost_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogpost_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/blogpost_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogpost_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/migrations/0002_alter_category_options_alter_product_options_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/migrations/0003_blogpost.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/migrations/0004_product_is_published_product_slug_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/migrations/0005_blogpost_is_published_blogpost_views_count_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/migrations/0006_delete_blogpost.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +122,9 @@
       <workItem from="1697007413965" duration="416000" />
       <workItem from="1697053363372" duration="3524000" />
       <workItem from="1697095022480" duration="326000" />
-      <workItem from="1697303454498" duration="423000" />
+      <workItem from="1697303454498" duration="2148000" />
+      <workItem from="1697397033301" duration="3766000" />
+      <workItem from="1697400821260" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
@@ -162,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696797252841</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update blog">
+      <option name="closed" value="true" />
+      <created>1697303906926</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697303906926</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
