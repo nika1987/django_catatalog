@@ -1,5 +1,5 @@
 {% load my_tag %}
-<!DOCTYPE html>
+
 <html>
 <head>
  <title>{{product.name}}</title>
@@ -152,20 +152,26 @@
 </head>
 <body>
  <div class="product-card">
-  <div class="product-image">
-   <img src="{% mediapath product.image %}" alt="Product Image">
-   <div class="product-label new">New</div>
-    <div class="col-22 mb-5">
+    <div class="product-image">
+      <img src="{% mediapath product.image %}" alt="Product Image">
+         <div class="product-label new">New</div>
+     <div class="col-22 mb-5">
   </div>
-  <div class="product-info">
-   <h2 class="product-name">{{product.name}} ({{product.slug}})</h2>
-   <p class="product-description">{{product.description}}</p>
-   <div class="product-price">
-    <span class="original-price"> AED {{product.price}}</span>
+        <div class="product-info">
+            <h2 class="product-name">{{product.name}} ({{product.slug}})</h2>
+                <p class="product-description">{{product.description}}</p>
+                    <div class="product-price">
+                        <span class="original-price"> AED {{product.price}}</span>
    </div>
    <div class="card-footer">
          Просмотры: {{product.views_count}}
    </div>
+            <button type="button" class="btn btn-lg btn-">
+        <a href="{% url 'shop:update_product' object.pk %}" type="button"
+           class="btn btn-sm btn-outline-secondary">Edit</a>
+        <a href="{% url 'shop:delete_product' object.pk %}" type="button"
+           class="btn btn-sm btn-outline-danger">Delete</a>
+    </button>
    <div class="product-rating">
     <span class="star">&#9733;</span>
     <span class="star">&#9733;</span>
@@ -175,7 +181,7 @@
     <span class="rating-count">(10)</span>
    </div>
 
-   <button class="add-to-cart">Add to Cart</button>
+  <button type="button" class="btn btn-lg btn-block btn-outline-primary">Купить</button>
   </div>
  </div>
 </body>

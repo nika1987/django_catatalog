@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/product_image/kuryache-file-34172501811347.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/product_image/kuryache-file-34172501811347_QFdrwvS.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/migrations/0002_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/product_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/templates/shop/product_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/.blogpost_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogpost_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/blogpost_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blogpost_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0002_alter_category_options_alter_product_options_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0003_blogpost.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0004_product_is_published_product_slug_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0005_blogpost_is_published_blogpost_views_count_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/migrations/0006_delete_blogpost.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/management/comands/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -125,6 +124,9 @@
       <workItem from="1697303454498" duration="2148000" />
       <workItem from="1697397033301" duration="3766000" />
       <workItem from="1697400821260" duration="2578000" />
+      <workItem from="1697435781378" duration="646000" />
+      <workItem from="1697486347493" duration="4240000" />
+      <workItem from="1697562945149" duration="4385000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
@@ -186,5 +188,16 @@
     <MESSAGE value="finish project" />
     <MESSAGE value="update blog" />
     <option name="LAST_COMMIT_MESSAGE" value="update blog" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/shop/views.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
