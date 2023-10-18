@@ -58,7 +58,14 @@ class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
         context_data['formset'] = formset
         return context_data
 
-        active_version_id = self.request.POST.get('active_version')  # Получаем значение из POST
+    def form_valid(self, form):
+        context_data = self.get_context_data()
+        formset = context_data['formset']
+        self.object = form.save()
+        user = self.request.user
+        obj = self.get_object()
+
+        active_version_id = self.request.POST.get('active_version')
         if active_version_id:
             active_version = Version.objects.get(id=active_version_id)
             active_version.is_active = True
@@ -66,12 +73,8 @@ class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
         return super().form_valid(form)
 
-    def form_valid(self, form):
-        context_data = self.get_context_data()
-        formset = context_data['formset']
-        self.object = form.save()
-        user = self.request.user
-        obj = self.get_object()
+    def get_success_url(self):
+        return reverse_lazy('shop:index')
 
 
 class ProductDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
