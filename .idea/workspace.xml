@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +119,8 @@
       <workItem from="1697435781378" duration="646000" />
       <workItem from="1697486347493" duration="4240000" />
       <workItem from="1697562945149" duration="5012000" />
-      <workItem from="1697645537425" duration="1388000" />
+      <workItem from="1697645537425" duration="3295000" />
+      <workItem from="1698006628293" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
@@ -176,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697567691771</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed method update">
+      <option name="closed" value="true" />
+      <created>1697647120388</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697647120388</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,14 +198,15 @@
     <MESSAGE value="finish project" />
     <MESSAGE value="update blog" />
     <MESSAGE value="create product, create version" />
-    <option name="LAST_COMMIT_MESSAGE" value="create product, create version" />
+    <MESSAGE value="fixed method update" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed method update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/shop/views.py</url>
-          <line>86</line>
+          <line>84</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

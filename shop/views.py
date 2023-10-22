@@ -50,11 +50,7 @@ class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
     def get_context_data(self, **kwargs):
         context_data = super().get_context_data(**kwargs)
         VersionFormset = inlineformset_factory(Product, Version, form=VersionForm, extra=1)
-        if self.request.method == 'POST':
-            formset = VersionFormset(self.request.POST, instance=self.object)
-        else:
-            formset = VersionFormset(instance=self.object)
-
+        formset = VersionFormset(instance=self.object)
         context_data['formset'] = formset
         return context_data
 
@@ -70,12 +66,14 @@ class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
             active_version = Version.objects.get(id=active_version_id)
             active_version.is_active = True
             active_version.save()
+        if formset.is_valid():
+            formset.instance = self.object
+            formset.save()
 
         return super().form_valid(form)
 
     def get_success_url(self):
         return reverse_lazy('shop:index')
-
 
 class ProductDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     model = Product
