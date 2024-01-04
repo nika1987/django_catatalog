@@ -13,8 +13,20 @@
                             <h3>
                                 {{ product.name }}
                             </h3>
+                            <div class="card-footer bg-white text-center">
                             <img src="{% mediapath product.image %}" alt="{{ product.name }}" width="70%" height="70%"/>
                             <p>{{ product.description|slice:100 }}</p>
+                             {% for version in active_versions %}
+
+                                {% if version.product == product %}
+                                    <p class="text-muted"> Номер версии : {{ version.version_number }}</p>
+                            <li>Активная версия: {{ version.version_name }}</li>
+                                {% endif %}
+                            {% endfor %}
+                            </div>
+                        <div class="card-footer bg-white text-center">
+                            <button type="button" class="btn btn-primary btn-sm">Добавить в корзину</button>
+                        </div>
                         </div>
                     </div>
                 </div>

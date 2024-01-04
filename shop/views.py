@@ -16,6 +16,12 @@ class ProductListView(ListView):
     template_name = 'shop/index.html'
     context_object_name = 'products'
 
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        active_versions = Version.objects.filter(is_active=True)
+        context['active_versions'] = active_versions
+        return context
+
 
 class ProductDetailView(DetailView):
     model = Product

@@ -38,3 +38,14 @@ class VersionForm(StyleFormMixin, forms.ModelForm):
 
     # Добавьте поле выбора активной версии
     active_version = forms.BooleanField(required=False, label="Активная версия")
+
+    def save(self, commit=True):
+        instance = super(VersionForm, self).save(commit=False)
+        if self.cleaned_data.get('active_version'):
+            # Сохраняем активную версию
+            instance.product.active_version = instance
+            instance.product.save()
+        if commit:
+            instance.save()
+        return instance
+

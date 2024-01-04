@@ -29,10 +29,17 @@
                         {% for form in formset.forms %}
                             {{ form.as_p }}
                         {% endfor %}
-                        <div class="form-group">
+                    <div class="form-group">
                             <label for="{{ form.is_active_version.id_for_label }}">Активная версия</label>
+                        {% if product.active_version %}
+                        <p>Активная версия: {{ product.active_version.name }}</p>
+                        {% else %}
+                        <p>Активная версия не выбрана</p>
+                        {% endif %}
                             {{ form.is_active_version }}
-                        </div>
+                    </div>
+
+
                     </div>
                 </div>
             </div>
