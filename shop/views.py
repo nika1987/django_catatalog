@@ -1,9 +1,11 @@
 from audioop import reverse
 
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.forms import inlineformset_factory
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
+from django.utils.decorators import method_decorator
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from slugify import slugify
 
@@ -23,12 +25,14 @@ class ProductListView(ListView):
         return context
 
 
+@method_decorator(login_required(login_url='users:register'), name='dispatch')
 class ProductDetailView(DetailView):
     model = Product
     template_name = 'shop/test.html'
     context_object_name = 'product'
 
 
+@method_decorator(login_required(login_url='users:register'), name='dispatch')
 class ProductCreateView(CreateView):
     model = Product
     template_name = 'shop/product_form.html'
