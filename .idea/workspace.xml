@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.emv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,6 +144,7 @@
       <workItem from="1704302407140" duration="14008000" />
       <workItem from="1704481032955" duration="9498000" />
       <workItem from="1704633725726" duration="6440000" />
+      <workItem from="1704797640513" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
