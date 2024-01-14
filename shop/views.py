@@ -11,6 +11,11 @@ from slugify import slugify
 
 from .forms import ProductForm, VersionForm
 from .models import Product, Category, Version
+from .services import get_cached_categories
+
+
+def contacts_view(request):
+    return render(request, 'shop/contacts.html')
 
 
 class ProductListView(ListView):
@@ -22,6 +27,7 @@ class ProductListView(ListView):
         context = super().get_context_data(*args, **kwargs)
         active_versions = Version.objects.filter(is_active=True)
         context['active_versions'] = active_versions
+        context['categories'] = get_cached_categories(self.kwargs('category_pk')) # используем сервисную функцию
         return context
 
 
@@ -29,7 +35,7 @@ class ProductListView(ListView):
 class ProductDetailView(DetailView):
     model = Product
     template_name = 'shop/test.html'
-    context_object_name = 'product'
+    #context_object_name = 'product'
 
 
 @method_decorator(login_required(login_url='users:register'), name='dispatch')
@@ -84,6 +90,7 @@ class ProductUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView)
 
     def get_success_url(self):
         return reverse_lazy('shop:index')
+
 
 class ProductDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     model = Product
