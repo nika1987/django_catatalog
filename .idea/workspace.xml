@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92b4535b-c5dc-482a-9d6b-3e941a5b365d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -147,7 +147,7 @@
       <workItem from="1704481032955" duration="9498000" />
       <workItem from="1704633725726" duration="6440000" />
       <workItem from="1704797640513" duration="602000" />
-      <workItem from="1705243078063" duration="534000" />
+      <workItem from="1705243078063" duration="1377000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <option name="closed" value="true" />
@@ -261,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704652857617</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update permissions">
+      <option name="closed" value="true" />
+      <created>1705243735893</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705243735893</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +284,8 @@
     <MESSAGE value="fixed method update" />
     <MESSAGE value="update versions" />
     <MESSAGE value="update users" />
-    <option name="LAST_COMMIT_MESSAGE" value="update users" />
+    <MESSAGE value="update permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="update permissions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
