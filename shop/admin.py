@@ -2,10 +2,6 @@ from django.contrib import admin
 from .models import Product, Category, Version
 
 
-# Register your models here.
-# admin.site.register(Student)
-
-
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'price', 'category',)
     list_filter = ('category',)
